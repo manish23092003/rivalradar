@@ -13,6 +13,7 @@ import ApiKeyModal from './components/ApiKeyModal';
 import ExportModal from './components/ExportModal';
 import RadarMark from './components/RadarMark';
 import { Loader2 } from 'lucide-react';
+import { API_BASE, apiUrl } from './api/config';
 
 export default function App() {
   const [tinyfishConfigured, setTinyfishConfigured] = useState(false);
@@ -46,7 +47,7 @@ export default function App() {
   // 1. Check health on mount
   const checkHealth = async () => {
     try {
-      const res = await fetch('/api/health');
+      const res = await fetch(apiUrl('/api/health'));
       if (res.ok) {
         const data = await res.json();
         setTinyfishConfigured(Boolean(data.tinyfishConfigured));
@@ -59,7 +60,7 @@ export default function App() {
   // 2. Fetch snapshots list
   const fetchSnapshots = async () => {
     try {
-      const res = await fetch('/api/snapshots');
+      const res = await fetch(apiUrl('/api/snapshots'));
       if (res.ok) {
         const data = await res.json();
         const loadedSnapshots = data.snapshots || [];
@@ -98,7 +99,7 @@ export default function App() {
     setIsHistoryOpen(false);
 
     try {
-      const res = await fetch(`/api/snapshots/${snapshotId}`);
+      const res = await fetch(apiUrl(`/api/snapshots/${snapshotId}`));
       if (!res.ok) {
         throw new Error(`Archived record not found (HTTP ${res.status})`);
       }
@@ -155,7 +156,7 @@ export default function App() {
         competitors: manualCompetitors.join(','),
       });
 
-      const eventSource = new EventSource(`/api/scan/stream?${queryParams.toString()}`);
+      const eventSource = new EventSource(apiUrl(`/api/scan/stream?${queryParams.toString()}`));
 
       eventSource.addEventListener('progress', (e) => {
         try {
@@ -189,7 +190,7 @@ export default function App() {
         console.warn('SSE stream error, trying fallback standard POST /api/scan:', e);
         eventSource.close();
         
-        fetch('/api/scan', {
+        fetch(apiUrl('/api/scan'), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ url, forceMock: Boolean(forceMock), manualCompetitors }),
@@ -218,7 +219,7 @@ export default function App() {
   // 6. Compare two snapshots directly
   const handleCompareSnapshots = async (id1, id2) => {
     try {
-      const res = await fetch(`/api/snapshots/compare?id1=${id1}&id2=${id2}`);
+      const res = await fetch(apiUrl(`/api/snapshots/compare?id1=${id1}&id2=${id2}`));
       if (res.ok) {
         const data = await res.json();
         setCurrentSnapshot(data.newer);
@@ -232,7 +233,7 @@ export default function App() {
   // 7. Delete snapshot
   const handleDeleteSnapshot = async (id) => {
     try {
-      await fetch(`/api/snapshots/${id}`, { method: 'DELETE' });
+      await fetch(apiUrl(`/api/snapshots/${id}`), { method: 'DELETE' });
       fetchSnapshots();
       if (currentSnapshot?.id === id) {
         setCurrentSnapshot(null);
@@ -245,7 +246,7 @@ export default function App() {
 
   // 8. Save TinyFish Key
   const handleSaveApiKey = async (apiKey) => {
-    const res = await fetch('/api/settings/key', {
+    const res = await fetch(apiUrl('/api/settings/key'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ apiKey }),

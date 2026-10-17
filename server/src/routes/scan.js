@@ -65,11 +65,30 @@ scanRouter.get('/scan/stream', async (req, res) => {
     'Content-Type': 'text/event-stream',
     'Cache-Control': 'no-cache',
     'Connection': 'keep-alive',
+    'X-Accel-Buffering': 'no',
   });
 
+  // Safe event writer that verifies the socket is still open and writable
   const sendEvent = (event, data) => {
-    res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+    if (!res.writableEnded && !res.destroyed) {
+      res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+    }
   };
+
+  // 15-second keepalive heartbeat to prevent reverse proxies (e.g. Render/Cloudflare) from dropping idle streams
+  const heartbeatInterval = setInterval(() => {
+    if (!res.writableEnded && !res.destroyed) {
+      res.write(': ping\n\n');
+    }
+  }, 15000);
+
+  // Clean up heartbeat when client disconnects or response finishes
+  const cleanup = () => {
+    clearInterval(heartbeatInterval);
+  };
+  req.on('close', cleanup);
+  res.on('finish', cleanup);
+  res.on('close', cleanup);
 
   try {
     const result = await runFullCompetitiveScan(validUrl, {
@@ -81,11 +100,14 @@ scanRouter.get('/scan/stream', async (req, res) => {
     });
 
     sendEvent('complete', result);
-    res.end();
   } catch (err) {
     console.error('[scan-stream] Stream error:', err);
     sendEvent('error', { error: err.message || 'Failed during competitive scan' });
-    res.end();
+  } finally {
+    cleanup();
+    if (!res.writableEnded) {
+      res.end();
+    }
   }
 });
 
