@@ -1,0 +1,275 @@
+{
+  "targetUrl": "https://resend.com",
+  "primaryCompany": {
+    "company_name": "Resend",
+    "product_summary": "Resend is an email platform built specifically for developers that enables teams to send transactional and marketing emails at scale with high deliverability. The platform provides a modern, developer-friendly API, SDKs for multiple programming languages, and tools such as test mode, webhooks, analytics, contact management, and templates — all designed to help developers integrate email into their applications without dealing with legacy infrastructure or complex HTML. Resend emphasizes that its emails are designed to reach human inboxes rather than spam folders.",
+    "features": [
+      "API-first email delivery with SDKs for Node.js, Next.js, Remix, Nuxt, Express, Hono, Redwood, Bun, Astro, Serverless, Ruby, Python, PHP, CLI, Go, Rust, Java, Elixir, and .NET, plus REST and SMTP support",
+      "Test mode for safe API experimentation",
+      "Modular webhooks for real-time event notifications",
+      "Modern visual email editor",
+      "React-based email templates via react-email",
+      "Contact and audience management",
+      "Broadcast campaigns with analytics",
+      "Automations and trigger-based email flows",
+      "Inbound email handling",
+      "Domain authentication for brand trust",
+      "Single Sign-On (SSO) support",
+      "Dedicated IP addresses for enterprise",
+      "AI credits for email content generation"
+    ],
+    "pricing": [
+      {
+        "plan_name": "Free",
+        "price": "$0 / mo",
+        "billing_cycle": "monthly",
+        "details": "3,000 emails/mo, 100 emails/day, 3 domains, 3 inboxes, ticket support, 10,000 automation runs, 30-day data retention, SSO"
+      },
+      {
+        "plan_name": "Pro",
+        "price": "$20 / mo",
+        "billing_cycle": "monthly",
+        "details": "50,000 emails/mo, extra emails at $0.90/1,000, all Free features, 10 domains, no daily limit, 5 webhook endpoints, 100 AI credits/mo, SSO"
+      },
+      {
+        "plan_name": "Scale",
+        "price": "$90 / mo",
+        "billing_cycle": "monthly",
+        "details": "100,000 emails/mo, extra emails at $0.90/1,000, all Pro features, 1,000 domains, dedicated Slack channel, 10 webhook endpoints, 500 AI credits/mo, SSO add-on, dedicated IP add-on"
+      },
+      {
+        "plan_name": "Enterprise (Custom)",
+        "price": "Custom",
+        "billing_cycle": "none",
+        "details": "Performance at any scale, all Scale features, 99.99% uptime SLA, personalized migration support, guaranteed response times, dedicated CSM, SSO, custom usage plan, enterprise rate limits"
+      }
+    ],
+    "target_customers": "Engineers, developers, and development teams across industries including AI, Creators, Media, Developer Tools, Fintech, Healthcare, Open Source, SaaS, Studios, and Travel. Resend serves organizations of all sizes from small startups and indie creators to large enterprises (e.g., Warner Bros, eBay, Valentino, Max).",
+    "evidence_urls": [
+      "https://resend.com",
+      "https://resend.com/pricing",
+      "https://resend.com/features",
+      "https://resend.com/about",
+      "https://resend.com/customers"
+    ],
+    "unknowns": [
+      "Exact founding date and headquarters location details are unclear beyond the San Francisco address listed",
+      "Specific details on data residency regions beyond GDPR compliance",
+      "Whether Resend offers a self-hosted/on-premise option",
+      "The exact number of paying customers on each pricing tier"
+    ]
+  },
+  "competitors": [
+    {
+      "company_name": "Mailgun (a Sinch company)",
+      "product_summary": "Mailgun is a transactional email delivery service and API platform designed primarily for developers and businesses. Its main product is a comprehensive email suite that enables organizations to send, track, test, and optimize emails at scale. Mailgun provides RESTful email APIs and SMTP relays for programmatic email sending, alongside tools for email validation, inbox placement optimization, reputation monitoring, and detailed email analytics, serving over 150,000 businesses worldwide including major companies such as Microsoft, Wikipedia, and American Express.",
+      "features": [
+        "Email API (RESTful API for sending, receiving, and tracking emails at scale)",
+        "SMTP Relays (eliminate need for self-hosted mail servers)",
+        "Email Routing (route and parse incoming email streams in UTF-8 JSON)",
+        "Email Event Webhooks (push email campaign data to other apps for real-time insights)",
+        "Send Time Optimization (send emails when recipients are most likely to engage)",
+        "Email Protection (email authentication and TLS encryption)",
+        "Easy API Integration (SDKs, documentation, seamless integration with existing applications)",
+        "Email Logs (comprehensive records of all email activity with timestamps)",
+        "Email Analytics (open rates, click-through rates, bounces, unsubscribes)",
+        "Maximize Inbox Placement (deliverability tools to achieve business goals)",
+        "Stay Out of the Spam Folder (email deliverability optimization)",
+        "Improve Sender Reputation",
+        "Avoid Disruption",
+        "Build a Winning Email Strategy",
+        "Get Expert Guidance (deliverability services team with 320+ years combined experience)",
+        "Email Validation (minimize bounced emails with real, cached send data)",
+        "Inbox Placement Testing (see where emails land across major mailbox providers)",
+        "Reputation Monitoring (IP and domain monitoring against blocklists and spam traps)",
+        "Email Previews (live preview testing on 100+ devices and clients)"
+      ],
+      "pricing": [
+        {
+          "plan_name": "Free",
+          "price": "$0/mo",
+          "billing_cycle": "billed monthly (includes 100 emails/day)",
+          "details": "Free tier with 100 emails/day limit"
+        },
+        {
+          "plan_name": "Basic",
+          "price": "$15/mo",
+          "billing_cycle": "billed monthly (includes 10,000 emails/mo)",
+          "details": "Basic plan with 10,000 emails per month"
+        },
+        {
+          "plan_name": "Foundation",
+          "price": "$35/mo",
+          "billing_cycle": "billed monthly (includes 50,000 emails/mo, first month free)",
+          "details": "Foundation plan with 50,000 emails per month"
+        },
+        {
+          "plan_name": "Scale",
+          "price": "$90/mo",
+          "billing_cycle": "billed monthly (includes 100,000 emails/mo, first month free)",
+          "details": "Scale plan with 100,000 emails per month"
+        }
+      ],
+      "target_customers": "Developers, businesses of all sizes (from startups to large enterprises), technology and marketing companies, email service providers (ESPs), and organizations requiring robust, scalable, and compliant email infrastructure. Industries include fintech, healthcare, SaaS, and any sector needing high-volume transactional or marketing email delivery. Current customers include Microsoft, Wikipedia, and American Express.",
+      "evidence_urls": [
+        "https://www.mailgun.com/",
+        "https://www.mailgun.com/pricing/",
+        "https://www.mailgun.com/pricing/compare-all-features/",
+        "https://www.mailgun.com/products/send/",
+        "https://www.mailgun.com/products/optimize/",
+        "https://www.mailgun.com/enterprise/",
+        "https://www.mailgun.com/about/",
+        "https://www.mailgun.com/solutions/"
+      ],
+      "unknowns": [
+        "Specific pricing details for enterprise/custom plans were not publicly listed and require contacting sales",
+        "Exact annual billing discounts were not found on the website (all displayed prices are monthly)",
+        "Whether international pricing tiers exist beyond USD",
+        "Detailed breakdown of what features are included or excluded in each plan (full feature comparison available but not fully extracted)",
+        "Mailgun's headquarters location was not explicitly stated on the visited pages"
+      ]
+    },
+    {
+      "company_name": "Postmark",
+      "product_summary": "Postmark is a reliable transactional email delivery service built for developers and businesses. Since 2010, they have delivered billions of emails, providing a developer-first Email API and SMTP service that ensures fast, reliable, and high deliverability for application emails. The platform supports email authentication (DMARC/SPF), modular webhooks for tracking delivery events, integrated email templates, analytics and retention tools, and dedicated support including 1-on-1 calls and live-chat, with a customer happiness rating of 95%.",
+      "features": [
+        "Email API with RESTful endpoints and official libraries for multiple languages (curl, Node.js, Python, Ruby, PHP, C#)",
+        "SMTP Service",
+        "Message Streams for managing different email types",
+        "Transactional Email delivery",
+        "High email deliverability",
+        "Email Templates with a responsive template editor",
+        "Inbound Email processing",
+        "Analytics & Retention with 45-day full content history and message event retention",
+        "Integrations (Webhooks, Zapier, etc.)",
+        "Bulk API",
+        "Sandbox Mode for safe testing",
+        "Email authentication (DMARC and SPF guidance)",
+        "Modular webhooks for tracking delivery, opens, bounces, and clicks",
+        "Domain and template management",
+        "API Explorer for testing API calls",
+        "Dedicated IPs",
+        "DMARC monitoring",
+        "Rebound (re-engagement tool)",
+        "Email Experts (consulting services)"
+      ],
+      "pricing": [
+        {
+          "plan_name": "Free",
+          "price": "$0.00/mo (100 emails/month)",
+          "billing_cycle": "Monthly subscription (Free tier)",
+          "details": "For testing/evaluating"
+        },
+        {
+          "plan_name": "Basic",
+          "price": "$15.00/mo (10,000 emails/month)",
+          "billing_cycle": "Monthly subscription",
+          "details": "Overages at $1.80 per 1,000 emails"
+        },
+        {
+          "plan_name": "Pro",
+          "price": "$16.50/mo (10,000 emails/month)",
+          "billing_cycle": "Monthly subscription",
+          "details": "Overages at $1.30 per 1,000 emails"
+        },
+        {
+          "plan_name": "Platform",
+          "price": "$18.00/mo (10,000 emails/month)",
+          "billing_cycle": "Monthly subscription",
+          "details": "Overages at $1.20 per 1,000 emails"
+        }
+      ],
+      "target_customers": "Developers, agencies, startups, bootstrapped startups, side projects, and enterprise businesses. The service is particularly aimed at companies that need reliable transactional email delivery integrated into their applications.",
+      "evidence_urls": [
+        "https://postmarkapp.com/",
+        "https://postmarkapp.com/why",
+        "https://postmarkapp.com/pricing",
+        "https://postmarkapp.com/email-api",
+        "https://postmarkapp.com/email-templates",
+        "https://postmarkapp.com/features"
+      ],
+      "unknowns": [
+        "Exact annual pricing plans and discounts (only monthly billing shown)",
+        "Specific enterprise pricing details and custom quote requirements",
+        "Detailed breakdown of what constitutes each feature tier difference between Basic, Pro, and Platform plans beyond overage rates"
+      ]
+    }
+  ],
+  "comparison": {
+    "executive_summary": "Resend positions itself with a focus on Engineers, developers, and development teams across industries including AI, Creators, Media, Developer Tools, Fintech, Healthcare, Open Source, SaaS, Studios, and Travel. Resend serves organizations of all sizes from small startups and indie creators to large enterprises (e.g., Warner Bros, eBay, Valentino, Max).. Entry pricing observed is Free tier available ($0). Compared to Mailgun (a Sinch company) (Free tier available ($0)) and Postmark (Free tier available ($0)), key differentiators include API-first email delivery with SDKs for Node.js, Next.js, Remix, Nuxt, Express, Hono, Redwood, Bun, Astro, Serverless, Ruby, Python, PHP, CLI, Go, Rust, Java, Elixir, and .NET, plus REST and SMTP support.",
+    "pricing_overview": {
+      "primary": {
+        "name": "Resend",
+        "entryPrice": "Free tier available ($0)",
+        "totalPlans": 4
+      },
+      "comp1": {
+        "name": "Mailgun (a Sinch company)",
+        "entryPrice": "Free tier available ($0)",
+        "totalPlans": 4
+      },
+      "comp2": {
+        "name": "Postmark",
+        "entryPrice": "Free tier available ($0)",
+        "totalPlans": 4
+      }
+    },
+    "feature_matrix": [
+      {
+        "feature": "API-first email delivery with SDKs for Node.js, Next.js, Remix, Nuxt, Express, Hono, Redwood, Bun, Astro, Serverless, Ruby, Python, PHP, CLI, Go, Rust, Java, Elixir, and .NET, plus REST and SMTP support",
+        "primarySupported": true,
+        "comp1Supported": false,
+        "comp2Supported": false
+      },
+      {
+        "feature": "Test mode for safe API experimentation",
+        "primarySupported": true,
+        "comp1Supported": false,
+        "comp2Supported": false
+      },
+      {
+        "feature": "Modular webhooks for real-time event notifications",
+        "primarySupported": true,
+        "comp1Supported": false,
+        "comp2Supported": false
+      },
+      {
+        "feature": "Modern visual email editor",
+        "primarySupported": true,
+        "comp1Supported": false,
+        "comp2Supported": false
+      },
+      {
+        "feature": "Email API (RESTful API for sending, receiving, and tracking emails at scale)",
+        "primarySupported": false,
+        "comp1Supported": true,
+        "comp2Supported": false
+      },
+      {
+        "feature": "SMTP Relays (eliminate need for self-hosted mail servers)",
+        "primarySupported": false,
+        "comp1Supported": true,
+        "comp2Supported": false
+      }
+    ],
+    "target_comparison": {
+      "primary": "Engineers, developers, and development teams across industries including AI, Creators, Media, Developer Tools, Fintech, Healthcare, Open Source, SaaS, Studios, and Travel. Resend serves organizations of all sizes from small startups and indie creators to large enterprises (e.g., Warner Bros, eBay, Valentino, Max).",
+      "comp1": "Developers, businesses of all sizes (from startups to large enterprises), technology and marketing companies, email service providers (ESPs), and organizations requiring robust, scalable, and compliant email infrastructure. Industries include fintech, healthcare, SaaS, and any sector needing high-volume transactional or marketing email delivery. Current customers include Microsoft, Wikipedia, and American Express.",
+      "comp2": "Developers, agencies, startups, bootstrapped startups, side projects, and enterprise businesses. The service is particularly aimed at companies that need reliable transactional email delivery integrated into their applications."
+    },
+    "primary_strengths": [
+      "API-first email delivery with SDKs for Node.js, Next.js, Remix, Nuxt, Express, Hono, Redwood, Bun, Astro, Serverless, Ruby, Python, PHP, CLI, Go, Rust, Java, Elixir, and .NET, plus REST and SMTP support",
+      "Test mode for safe API experimentation",
+      "Modular webhooks for real-time event notifications"
+    ],
+    "differentiators": [
+      "Resend: API-first email delivery with SDKs for Node.js, Next.js, Remix, Nuxt, Express, Hono, Redwood, Bun, Astro, Serverless, Ruby, Python, PHP, CLI, Go, Rust, Java, Elixir, and .NET, plus REST and SMTP support",
+      "Mailgun (a Sinch company): Email API (RESTful API for sending, receiving, and tracking emails at scale)",
+      "Postmark: Email API with RESTful endpoints and official libraries for multiple languages (curl, Node.js, Python, Ruby, PHP, C#)"
+    ]
+  },
+  "isDemo": false,
+  "id": "snap_1792220886552_rsipn",
+  "timestamp": "2026-10-17T07:08:06.552Z",
+  "targetDomain": "resend.com"
+}

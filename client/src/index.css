@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #F5F3ED;
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #ECE9E0;
+    --text-primary: #202522;
+    --text-secondary: #73766E;
+    --accent-olive: #68745C;
+    --accent-olive-hover: #526047;
+    --border-fine: #E3E0D7;
+    --border-strong: #C8C4B7;
+    --alert-terracotta: #B66A45;
+    --alert-terracotta-bg: #FBF1EC;
+    --status-success: #2D6A4F;
+    --status-success-bg: #EAF2EC;
+    --status-warning: #9A6B2F;
+    --status-warning-bg: #F9F3EA;
+    --status-error: #9E3A33;
+    --status-error-bg: #F8ECEB;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--paper-bg);
+  }
+
+  body {
+    background-color: var(--paper-bg);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Editorial Serif Headings */
+  .font-serif-editorial {
+    font-family: 'Newsreader', 'Source Serif 4', Georgia, Cambria, 'Times New Roman', serif;
+    letter-spacing: -0.015em;
+  }
+
+  /* Monospaced Technical & Metadata */
+  .font-mono-technical {
+    font-family: 'IBM Plex Mono', Menlo, Consolas, Monaco, monospace;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F5F3ED;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D8D4C8;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B6B2A5;
+  }
+}
+
+/* Editorial Surface Tokens */
+.surface-white {
+  background-color: #FFFFFF;
+  border: 1px solid #E3E0D7;
+}
+
+.surface-paper {
+  background-color: #F5F3ED;
+}
+
+.surface-secondary {
+  background-color: #ECE9E0;
+  border: 1px solid #E3E0D7;
+}
+
+/* Terracotta Editorial Accent */
+.terracotta-border-l {
+  border-left: 3px solid #B66A45;
+}
+
+/* Restrained Hover transitions */
+.editorial-hover {
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "snap_linear_v1",
+  "targetUrl": "https://linear.app",
+  "targetDomain": "linear.app",
+  "timestamp": "2026-10-03T06:23:33.935Z",
+  "primaryCompany": {
+    "company_name": "Linear",
+    "product_summary": "Linear is a purpose-built issue tracking and project planning tool for high-velocity software teams.",
+    "features": [
+      "High-velocity keyboard-driven issue tracking",
+      "Cycles and automated sprint management",
+      "Project roadmaps with milestone dependencies",
+      "Native Git & GitHub sync with branch automation",
+      "Real-time offline sync & instant search"
+    ],
+    "pricing": [
+      {
+        "plan_name": "Free",
+        "price": "",
+        "billing_cycle": "Forever",
+        "details": "Up to 250 active issues"
+      },
+      {
+        "plan_name": "Standard",
+        "price": "",
+        "billing_cycle": "per user/month billed annually",
+        "details": "Unlimited issues"
+      },
+      {
+        "plan_name": "Plus",
+        "price": "",
+        "billing_cycle": "per user/month billed annually",
+        "details": "Linear Insights & SLA"
+      },
+      {
+        "plan_name": "Enterprise",
+        "price": "Custom",
+        "billing_cycle": "Annual contract",
+        "details": "SAML SSO"
+      }
+    ],
+    "target_customers": "Seed and series A developer startups",
+    "evidence_urls": [
+      "https://linear.app",
+      "https://linear.app/pricing"
+    ],
+    "unknowns": []
+  },
+  "competitors": [
+    {
+      "company_name": "Jira Software",
+      "product_summary": "Atlassian Jira Software issue and project tracking.",
+      "features": [
+        "Scrum and Kanban boards",
+        "Advanced roadmaps"
+      ],
+      "pricing": [
+        {
+          "plan_name": "Standard",
+          "price": ".16",
+          "billing_cycle": "per user/month",
+          "details": "1 project role"
+        }
+      ],
+      "target_customers": "Enterprise IT teams",
+      "evidence_urls": [
+        "https://atlassian.com/software/jira"
+      ],
+      "unknowns": []
+    },
+    {
+      "company_name": "Shortcut",
+      "product_summary": "Fast agile project management.",
+      "features": [
+        "Stories and Epics",
+        "Docs integration"
+      ],
+      "pricing": [
+        {
+          "plan_name": "Team",
+          "price": ".50",
+          "billing_cycle": "per user/month",
+          "details": "Core features"
+        }
+      ],
+      "target_customers": "Growth dev teams",
+      "evidence_urls": [
+        "https://shortcut.com"
+      ],
+      "unknowns": []
+    }
+  ],
+  "comparison": {
+    "executive_summary": "Linear offers a keyboard-first alternative to Jira Software with fast sprint cycles.",
+    "pricing_overview": {
+      "primary": {
+        "name": "Linear",
+        "entryPrice": "Free tier available ()",
+        "totalPlans": 4
+      },
+      "comp1": {
+        "name": "Jira Software",
+        "entryPrice": ".16 (Standard)",
+        "totalPlans": 1
+      },
+      "comp2": {
+        "name": "Shortcut",
+        "entryPrice": ".50 (Team)",
+        "totalPlans": 1
+      }
+    },
+    "feature_matrix": [],
+    "primary_strengths": [
+      "High-velocity keyboard-driven issue tracking"
+    ],
+    "differentiators": [
+      "Fast keyboard shortcuts"
+    ]
+  },
+  "isDemo": true
+}

@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+*.env
+*.env.*
+server/.env
+server/.env.*
+!.env.example
+!server/.env.example
+
+# Build output
+client/dist/
+dist/
+
+# Local runtime snapshots & data (preserve seed fixtures)
+server/data/snapshots/*
+!server/data/snapshots/snap_linear_v1.json
+!server/data/snapshots/snap_1792220886552_rsipn.json
+!server/data/snapshots/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+
+# Local runtime snapshots & data (preserve seed fixtures)
+data/snapshots/*
+!data/snapshots/snap_linear_v1.json
+!data/snapshots/snap_1792220886552_rsipn.json
+!data/snapshots/.gitkeep
+
+*.log
