@@ -45,10 +45,26 @@ Designed with an **Editorial Intelligence** visual language inspired by premium 
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-<!-- Add interface screenshots here -->
-*(Screenshots will be added here showcasing the Editorial Intelligence workspace, capability matrix, and research ledger.)*
+### Market Radar Dashboard
+*Editorial market radar overview showing executive summaries, key moats, capability matrix, and pricing breakdown.*
+
+![Market Radar Dashboard](screenshots/dashboard.png)
+
+---
+
+### Competitor Intelligence Dossiers
+*Three-way competitor dossiers with confirmed capabilities, pricing plans, and verified source evidence URLs.*
+
+![Competitor Intelligence Dossiers](screenshots/competitor-profiles.png)
+
+---
+
+### Research Archive and Saved Studies
+*Editorial ledger of historical studies with instant snapshot restoration and cross-scan change detection.*
+
+![Research Archive and Saved Studies](screenshots/research-archive.png)
 
 ---
 
